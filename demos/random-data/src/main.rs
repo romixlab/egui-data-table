@@ -288,7 +288,7 @@ impl eframe::App for DemoApp {
 
                 ui.separator();
 
-                egui::widgets::global_dark_light_mode_buttons(ui);
+                egui::widgets::global_theme_preference_buttons(ui);
 
                 ui.separator();
 
@@ -346,7 +346,7 @@ fn main() {
     eframe::run_simple_native(
         "Spreadsheet Demo",
         eframe::NativeOptions {
-            default_theme: eframe::Theme::Dark,
+            // default_theme: eframe::Theme::Dark,
             centered: true,
 
             ..Default::default()
